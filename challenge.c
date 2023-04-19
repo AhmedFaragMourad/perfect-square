@@ -13,15 +13,15 @@ checks if it is a perfect square.WITHOUT USING (SQRT FUNC.)
 int sqr(int num_1){
 int psqrt;
 //loop to get the roots of number
-	for (int i=1;i<num_1;i++){
-			psqrt=i*i;
-			if(num_1==psqrt){
-							printf("num roots %d %d \n",i,i);
-							printf("num perfect sqr \n");
-							break;
-        }
-  }
-	return psqrt;
+for (int i=1;i<num_1;i++){
+psqrt=i*i;
+if(num_1==psqrt){
+printf("num roots %d %d \n",i,i);
+printf("num perfect sqr \n");
+break;
+}
+}
+return psqrt;
 }
 int main()
 {
@@ -30,20 +30,20 @@ int main()
 	fprintf(stdout,"Please enter the no.\n");
 	fflush(stdout);
 	// reads inputs num from user
-scanf("%d",&x);
+	scanf("%d",&x);
 
-num_in=x;
-//check if num is +ve or not
-if (num_in>0){
-	//if num is +ve check if is it perfect sqr or not
-	if(sqr(num_in) != num_in){
-		printf("num not perfect sqr \n");
+	num_in=x;
+	//check if num is +ve or not
+	if (num_in>0){
+		//if num is +ve check if is it perfect sqr or not
+		if(sqr(num_in) != num_in){
+			printf("num not perfect sqr \n");
+		}
 	}
-}
-else{
-	printf("not even +ve \n");
-}
-return 0;
+	else{
+		printf("not even +ve \n");
+	}
+	return 0;
 }
 
 
